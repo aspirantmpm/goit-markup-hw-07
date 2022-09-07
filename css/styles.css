@@ -50,13 +50,15 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.list {
   display: flex;
 }
 
@@ -70,6 +72,21 @@ p {
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+
+/* ============ */
+/* Header*/
+/* ============ */
+
+.header-underline {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* Logo */
@@ -96,8 +113,6 @@ p {
   color: var(--main-color);
 }
 
-/* Header*/
-
 .nav {
   display: flex;
   margin-left: auto;
@@ -111,16 +126,9 @@ p {
   background-color: var(--main-color);
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
 
-.header-section {
-  border-bottom: 1px solid var(--border-color);
-}
+
+
 
 .link {
   position: relative;
@@ -151,13 +159,13 @@ p {
 
 .link:hover,
 .link:focus,
-.link.active {
+.active {
   color: var(--brand-color);
 }
 
 .link:hover::after,
 .link:focus::after,
-.link.active::after {
+.active::after {
   background-color: var(--brand-color);
 }
 
@@ -559,10 +567,7 @@ p {
   box-shadow: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
+
 
 .projects-title {
   font-weight: 700;
