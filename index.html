@@ -130,7 +130,7 @@
         </div>
       </section>
 
-      <!-- Чим ми займаємося -->
+      <!-- Services -->
       <section class="section services">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
@@ -451,7 +451,7 @@
           </div>
           <div class="">
             <h3 class="footer-title">Підпишіться на розсилку</h3>
-            <form class="footer-form js-speaker-form">
+            <form class="footer-form">
               <label for="mail"></label>
               <input
                 class="footer-form__input"
@@ -474,8 +474,8 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button__close" data-modal-close>
-          <svg class="modal-button__icon">
+        <button class="close-button" data-modal-close>
+          <svg class="close-button__icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -515,8 +515,7 @@
         <div class="modal-checkbox">
             <label class="modal-checkbox__label" for="agreement"
               >Погоджуюся з розсилкою та приймаю
-              <a class="modal-checkbox__link" href="">Умови договору</a>
-                            
+              <a class="modal-checkbox__link" href="">Умови договору</a>                            
               <input type="checkbox" class="modal-checkbox__imput" name="agreement" id="agreement" />
               <svg class="modal-checkbox__check-field">
                 <use href="./images/icons.svg#icon-check"></use>
@@ -524,23 +523,10 @@
               <span class="modal-checkbox__empty-field"></span>           
             </label>
           </div>          
-          <button class="form-button modal-button" type="submit">Відправити</button>
+          <button class="form-button form-button__modal-button" type="submit">Відправити</button>
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
-    <!-- <script>
-        (() => {
-            document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-                e.preventDefault();
-
-                new FormData(e.currentTarget).forEach((value, name) =>
-                    console.log(`${name}: ${value}`),
-                );
-
-                e.currentTarget.reset();
-            });
-        })();
-    </script> -->
+    <script src="./js/modal.js"></script>    
   </body>
 </html>
