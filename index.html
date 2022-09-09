@@ -27,17 +27,19 @@
           ><span class="logo__left-part">Web</span
           ><span class="logo__right-part--dark">Studio</span></a
         >
-        <ul class="header-nav list">
-          <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--active" href="./index.html">Студія</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#contacts">Контакти</a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="header-nav list">
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--active" href="./index.html">Студія</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="header-contact list">
           <li class="header-contact__item">
             <a class="header-contact__link" href="mailto:info@devstudio.com">
@@ -60,7 +62,6 @@
     </header>
 
     <main>
-
       <!-- Hero -->
       <div class="hero-background">
         <section class="section hero">
@@ -405,7 +406,9 @@
                   >
                 </li>
                 <li class="contact-list__item">
-                  <a class="contact-footer__item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  <a class="contact-footer__item" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="contact-list__item">
                   <a class="contact-footer__item" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -448,9 +451,15 @@
           </div>
           <div class="">
             <h3 class="footer-title">Підпишіться на розсилку</h3>
-            <form class="footer-form js-speaker-form ">
+            <form class="footer-form js-speaker-form">
               <label for="mail"></label>
-              <input class="footer-form__input" type="email" name="mail" id="mail" placeholder="E-mail" />
+              <input
+                class="footer-form__input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
               <button class="form-button form-button__footer-button" type="submit">
                 Підписатися
                 <svg class="form-button__icon">
@@ -465,56 +474,57 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close" data-modal-close>
-          <svg class="icon-close">
+        <button class="modal-button__close" data-modal-close>
+          <svg class="modal-button__icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="form-name">Залиште свої дані, ми вам передзвонимо</p>
+        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-          <div class="form-field">
-            <label class="label" for="username">Ім'я</label>
-            <input type="text" class="input" name="username" id="username" />
-            <svg class="icon-form">
+          <div class="modal-item">
+            <label class="modal-item__label" for="username">Ім'я</label>
+            <input type="text" class="modal-item__input" name="username" id="username" />
+            <svg class="modal-item__icon">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label class="label" for="tel">Телефон</label>
-            <input type="tel" class="input" name="tel" id="tel" />
-            <svg class="icon-form">
+          <div class="modal-item">
+            <label class="modal-item__label" for="tel">Телефон</label>
+            <input type="tel" class="modal-item__input" name="tel" id="tel" />
+            <svg class="modal-item__icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label class="label" for="email">Пошта</label>
-            <input type="email" class="input" name="email" id="email" />
-            <svg class="icon-form">
+          <div class="modal-item">
+            <label class="modal-item__label" for="email">Пошта</label>
+            <input type="email" class="modal-item__input" name="email" id="email" />
+            <svg class="modal-item__icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          <div class="form-field text">
-            <label class="label" for="comment">Коментар</label>
+          <div class="modal-item">
+            <label class="modal-item__label" for="comment">Коментар</label>
             <textarea
-              class="input-comment"
+              class="modal-item__comment"
               name="comment"
               id="comment"
               placeholder="Введіть текст"
             ></textarea>
-          </div>
-          <div class="checkbox">
-            <label class="agreement" for="agreement"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="agreement accept" href="">Умови договору</a>
-              <input type="checkbox" class="contract" name="agreement" id="agreement" />
-              <svg class="icon-check">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-              <span class="check-empty"></span>
-            </label>
-          </div>
-          <button class="form-button modal-button" type="submit">Відправити</button>
+          </div>          
         </form>
+        <div class="modal-checkbox">
+            <label class="modal-checkbox__label" for="agreement"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="modal-checkbox__link" href="">Умови договору</a>
+                            
+              <input type="checkbox" class="modal-checkbox__imput" name="agreement" id="agreement" />
+              <svg class="modal-checkbox__check-field">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>  
+              <span class="modal-checkbox__empty-field"></span>           
+            </label>
+          </div>          
+          <button class="form-button modal-button" type="submit">Відправити</button>
       </div>
     </div>
 
