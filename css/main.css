@@ -168,7 +168,6 @@ img {
 .header-nav__link--active {
   color: #2196f3;
 }
-
 .header-nav__link--active::after {
   content: "";
   position: absolute;

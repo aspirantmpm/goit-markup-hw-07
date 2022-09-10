@@ -37,23 +37,22 @@
   }
 
   &--active {
-  color: $color-brand;
-}
-}
-
-.header-nav__link--active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 44px;
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 4px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
-   background-color: $color-brand;
+    color: $color-brand;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 44px;
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 4px;
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: $timing-function;
+      background-color: $color-brand;
+    }
+  }
 }
 
 .header-contact__link {
