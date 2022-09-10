@@ -1,3 +1,40 @@
+.filter-button, .client-list, .team-list, .services-list, .benefit-list, .header-contact, .header-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-button, .modal-button, .hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: #2196f3;
+  fill: #ffffff;
+  color: #ffffff;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button:hover, .modal-button:hover, .hero-button:hover, .footer-button:focus, .modal-button:focus, .hero-button:focus {
+  background-color: #188ce8;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -13,15 +50,6 @@ p {
 img {
   display: block;
   max-width: 100%;
-}
-
-.list, .client-list, .team-list, .services-list, .benefit-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .container {
@@ -70,34 +98,6 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.button, .footer-button, .modal-button, .hero-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  border-radius: 4px;
-  border: none;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: #2196f3;
-  fill: #ffffff;
-  color: #ffffff;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button:hover, .footer-button:hover, .modal-button:hover, .hero-button:hover, .button:focus, .footer-button:focus, .modal-button:focus, .hero-button:focus {
-  background-color: #188ce8;
 }
 
 .logo {

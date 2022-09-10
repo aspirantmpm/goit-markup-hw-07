@@ -3,7 +3,7 @@
 }
 
 .services-list {
-  @extend .list;
+  @extend %list;
   gap: 30px;
 }
 

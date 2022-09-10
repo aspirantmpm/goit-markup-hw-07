@@ -99,7 +99,7 @@
 }
 
 .footer-button {
-  @extend .button;
+  @extend %button;
   padding: 10px 28px;
   display: flex;
 }
