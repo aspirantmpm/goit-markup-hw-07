@@ -37,6 +37,7 @@
   }
 
   &--active {
+    @extend .header-nav__link;
     color: $color-brand;
     &::after {
       content: '';

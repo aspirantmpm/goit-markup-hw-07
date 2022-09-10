@@ -178,6 +178,7 @@ textarea {
 }
 
 .modal-button {
+  @extend .button;
   display: flex;
   padding: 10px 52px;
   margin-left: auto;

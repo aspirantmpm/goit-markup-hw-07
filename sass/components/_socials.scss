@@ -25,11 +25,13 @@
 }
 
 .socials__link--light {
+  @extend .socials__link;
   background-color: $color-white;
   fill: $color-gray-light;
 }
 
 .socials__link--dark {
+  @extend .socials__link;
   background-color: $color-white-transparent;
   fill: $color-white;
 }

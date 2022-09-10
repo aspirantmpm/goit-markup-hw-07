@@ -3,6 +3,7 @@
 }
 
 .team-list {
+  @extend .list;
   gap: 30px;
 }
 
