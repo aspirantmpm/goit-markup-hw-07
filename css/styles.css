@@ -216,6 +216,12 @@ img {
   transition-timing-function: var(--timing-function);
 }
 
+.header-nav__link:hover,
+.header-nav__link:focus,
+.header-nav__link--active {
+  color: var(--color-brand);
+}
+
 .header-nav__link:hover::after,
 .header-nav__link:focus::after,
 .header-nav__link--active::after {
@@ -237,12 +243,6 @@ img {
   transition-timing-function: var(--timing-function);
 }
 
-.header-nav__link:hover,
-.header-nav__link:focus,
-.header-nav__link--active {
-  color: var(--color-brand);
-  
-}
 
 .header-contact__link:hover,
 .header-contact__link:focus {
